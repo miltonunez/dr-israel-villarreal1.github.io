@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="menu container">
+            <img src="img/dr-israel-villarreal-isotipo.svg" class="logo1" href="#">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="img/menu-btn.svg" class="menu-ico" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#acerca">ACERCA DE MI</a></li>
+                    <li><a href="#servicios">MIS SERVICIOS</a></li>
+                    <li><a href="#testimonios">TESTIMONIOS</a></li>
+                    <li><a href="#galeria">GALERÍA</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="dr-israel-villarreal">
+        <!-- ACERCA DE MI -->
+        <h1 class="titulo" id="acerca">ACERCA DE MI</h1>
+        <div class="acerca-container">
+            <div class="acerca-card">
+                <img src="img/dr-israel-villarreal.jpg">
+            </div>
+            <div class="acerca-card2">
+                <img src="img/dr-israel-villarreal-logotipo.svg" class="logotipo">
+                <h2>Dr. Israel S. Villarreal del Bosque</h2>
+                <p>Médico Especialista en Radiología e Imagen<br>
+                    Alta Especialidad en Radiología Vascular e Intervencionista<br><br>
+                    CP. UANL: 10896080<br>
+                    CE. UANL: 13126471<br><br>
+                    <img src="https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/Email-Letter-Mail-256.png"
+                        alt="Correo electrónico" style="height: 15px; margin-bottom: -3px;">
+                    dr.israel.radiologo@gmail.com<br>
+                    <img src="https://cdn3.iconfinder.com/data/icons/font-awesome-solid/512/phone-256.png"
+                        alt="Teléfono" style="height: 15px; margin-bottom: -3px;"> (+52) 81 1225 6437
+                </p>
+            </div>
+        </div>
+        <!-- MIS SERVICIOS -->
+        <h1 class="titulo" id="servicios">MIS SERVICIOS</h1>
+        <div class="servicios-container">
+            <div class="servicios-card">
+                <img src="img/01.webp">
+                <h2>Servicio 01</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="servicios-card">
+                <img src="img/06.webp">
+                <h2>Servicio 02</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="servicios-card">
+                <img src="img/03.webp">
+                <h2>Servicio 03</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="servicios-card">
+                <img src="img/04.webp">
+                <h2>Servicio 04</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="servicios-card">
+                <img src="img/05.webp">
+                <h2>Servicio 05</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <!-- ACORDEONES  -->
+        <div class="contenedor-acordeon">
+            <div class="acordeon" onclick="toggleAcordeon(event)">
+                <input type="checkbox" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+                <label for="btn-acordeon1" class="label-acordeon">
+                    ULTRASONIDOS
+                </label>
+                <div class="contenido-acordeon">
+                    <p>Explora mi amplia gama de servicios de Ultrasonidos. Ofrezco diagnósticos detallados y estudios
+                        especializados, desde Ultrasonidos Generales, hasta Ultrasonidos Doppler para evaluaciones
+                        vasculares y Ultrasonidos Especiales, que incluyen estudios específicos. Mi compromiso es
+                        proporcionar Ultrasonidos de alta calidad para una atención médica integral y especializada.</p>
+                    <!-- Acordeón secundario -->
+                    <div class="acordeonb" onclick="toggleAcordeonb(event)">
+                        ULTRASONIDOS GENERALES
+                        <div class="contenido-acordeonb">
+                            <p>
+                            <ul>
+                                <li>Us Abdomen superior</li>
+                                <li>Us Abdomen total</li>
+                                <li>Us Hepático / Vías biliares</li>
+                                <li>Us Pélvico</li>
+                                <li>Us Testicular</li>
+                                <li>Us Prostático</li>
+                                <li>Us Vesico-prostático con urina residual</li>
+                                <li>Us Renal y vías urinarias</li>
+                                <li>Us de Mama</li>
+                                <li>Us Tejidos blandos</li>
+                                <li>Us Hernias</li>
+                                <li>Us Tiroides / cuello</li>
+                                <li>Us Apendicular</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Acordeón secundario -->
+                    <div class="acordeonb" onclick="toggleAcordeonb(event)">
+                        ULTRASONIDOS DOPPLER
+                        <div class="contenido-acordeonb">
+                            <p>
+                            <ul>
+                                <li>Doppler Hepático</li>
+                                <li>Doppler Carotideo</li>
+                                <li>Doppler Art 1 miembro SUP</li>
+                                <li>Doppler Art 2 miembros SUP</li>
+                                <li>Doppler Art 1 miembro INF</li>
+                                <li>Doppler Art 2 miembros INF</li>
+                                <li>Doppler Venoso 1 miembro SUP</li>
+                                <li>Doppler Venoso 2 miembros SUP</li>
+                                <li>Doppler Venoso 1 miembro INF</li>
+                                <li>Doppler Venoso 2 miembros INF</li>
+                                <li>Doppler Venoso insuficiencia</li>
+                                <li>Doppler Renal bilateral</li>
+                                <li>Doppler Renal injerto</li>
+                                <li>Doppler Hepático injerto</li>
+                                <li>Doppler Tiroideo</li>
+                                <li>Doppler Testicular</li>
+                                <li>Doppler Arteria temporal</li>
+                                <li>Doppler Daverject</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Acordeón secundario -->
+                    <div class="acordeonb" onclick="toggleAcordeonb(event)">
+                        ULTRASONIDOS ESPECIALES
+                        <div class="contenido-acordeonb">
+                            <p>
+                            <ul>
+                                <li>Us Transvaginal</li>
+                                <li>Us Tórax</li>
+                                <li>Us Hombro</li>
+                                <li>Us Codo</li>
+                                <li>Us Rodilla</li>
+                                <li>Us Muñeca</li>
+                                <li>Us Piloro</li>
+                                <li>Us Transfontanelar</li>
+                                <li>Us Cadera</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Acordeón 2 -->
+            <div class="acordeon" onclick="toggleAcordeon(event)">
+                <input type="checkbox" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+                <label for="btn-acordeon2" class="label-acordeon">
+                    RADIOLOGÍA INTERVENCIONISTA
+                </label>
+                <div class="contenido-acordeon">
+                    <p>Brindamos una atención integral y personalizada. Mi compromiso es proporcionar soluciones
+                        adaptadas a las necesidades únicas de cada paciente y mi práctica se basa en la excelencia
+                        médica y en crear un ambiente de atención centrado en el paciente, donde la salud y la calidad
+                        de vida son prioridades fundamentales.</p>
+
+                    <!-- Acordeón secundario -->
+                    <div class="acordeonb" onclick="toggleAcordeonb(event)">
+                        PAQUETES RADIOLOGÍA INTERVENCIONISTA
+                        <div class="contenido-acordeonb">
+                            <p>
+                            <ul>
+                                <li>Paquetes ABLACIONES (calor, microondas) para ICAN</li>
+                                <li>Paquetes BIOPSIAS para ICAN</li>
+                                <li>Paquetes DERIVACIONES BILIARES para ICAN</li>
+                                <li>Paquetes DRENAJES para ICAN</li>
+                                <li>Paquetes NEFROSTOMÍAS para ICAN</li>
+                                <li>Paquetes PARACENTESIS Y TORACOCENTESIS para ICAN</li>
+                                <li>Paquetes PUERTOS VASCULARES (PORTH A CATH) para ICAN</li>
+                                <li>Paquetes Quimioembolizaciones TACE para ICAN</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Acordeones adicionales -->
+            <div class="acordeon" onclick="toggleAcordeon(event)">
+                <input type="checkbox" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+                <label for="btn-acordeon3" class="label-acordeon">
+                    SERVICIO 3
+                </label>
+                <div class="contenido-acordeon">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates minima nesciunt omnis!
+                        Sed nemo magnam hic neque cupiditate consequuntur.</p>
+                </div>
+            </div>
+
+            <div class="acordeon" onclick="toggleAcordeon(event)">
+                <input type="checkbox" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+                <label for="btn-acordeon4" class="label-acordeon">
+                    SERVICIO 4
+                </label>
+                <div class="contenido-acordeon">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates minima nesciunt omnis!
+                        Sed nemo magnam hic neque cupiditate consequuntur.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TESTIMONIOS -->
+        <h1 class="titulo" id="testimonios">TESTIMONIOS</h1>
+        <div class="testimonios-container">
+            <div class="testimonios-card">
+                <img src="img/planner.jpg">
+                <div class="testimonios-cardtext">
+                    <h2>Testimonio 01</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, commodi rem.</p>
+                </div>
+            </div>
+            <div class="testimonios-card">
+                <img src="img/planner.jpg">
+                <div class="testimonios-cardtext">
+                    <h2>Testimonio 02</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, commodi rem.</p>
+                </div>
+            </div>
+            <div class="testimonios-card">
+                <img src="img/planner.jpg">
+                <div class="testimonios-cardtext">
+                    <h2>Testimonio 03</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, commodi rem.</p>
+                </div>
+            </div>
+            <div class="testimonios-card">
+                <img src="img/planner.jpg">
+                <div class="testimonios-cardtext">
+                    <h2>Testimonio 04</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, commodi rem.</p>
+                </div>
+            </div>
+            <div class="testimonios-card">
+                <img src="img/planner.jpg">
+                <div class="testimonios-cardtext">
+                    <h2>Testimonio 05</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, commodi rem.</p>
+                </div>
+            </div>
+        </div>
+        <!-- GALERÍA -->
+        <h1 class="titulo" id="galeria">GALERÍA</h1>
+        <div class="galeria-container">
+            <div class="galeria-card">
+                <img src="img/g01.heic" alt="Imagen">
+                <h2>Título 01</h2>
+            </div>
+            <div class="galeria-card">
+                <img src="img/g02.heic" alt="Imagen">
+                <h2>Título 02</h2>
+            </div>
+            <div class="galeria-card">
+                <img src="img/g03.heic" alt="Imagen">
+                <h2>Título 03</h2>
+            </div>
+            <div class="galeria-card">
+                <img src="img/g04.heic" alt="Imagen">
+                <h2>Título 04</h2>
+            </div>
+            <div class="galeria-card">
+                <img src="img/g05.webp" alt="Imagen">
+                <h2>Título 05</h2>
+            </div>
+            <div class="galeria-card">
+                <img src="img/g09.webp" alt="Imagen">
+                <h2>Título 06</h2>
+            </div>
+        </div>
+        <!-- CONTACTO -->
+        <h1 class="titulo" id="contacto">CONTACTO</h1>
+        <div class="contacto-container">
+            <p class="contacto-p">Comunícate conmigo a través de mis redes sociales o e-mail para obtener una valoración
+                de tu caso</p>
+            <div class="social-icons">
+                <div class="social-icon">
+                    <a href="https://wa.me/5218112256437">
+                        <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-circle-512.png"
+                            alt="WhatsApp" width="100" height="100">
+                    </a>
+                </div>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/profile.php?id=100082693924391">
+                        <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-256.png"
+                            alt="Facebook" width="100" height="100">
+                    </a>
+                </div>
+                <div class="social-icon">
+                    <a href="https://www.instagram.com/dr.israel.radiologo/">
+                        <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-256.png"
+                            alt="Instagram" width="100" height="100">
+                    </a>
+                </div>
+            </div>
+            <p class="email"><img
+                    src="https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/Email-Letter-Mail-256.png"
+                    alt="Correo electrónico" style="height: 25px; margin-bottom: -5px;"> drisrael.radiologo@gmail.com
+            </p>
+        </div>
+        <div class="form">
+            <form>
+                <label for="nombre"></label>Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre"><br>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="Introduce tu correo electrónico"><br>
+
+                <label for="telefono">Número de Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Introduce tu número de telefono"><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="3" cols="30"
+                    placeholder="Platicanos más acerca de ti"></textarea><br>
+
+                <label for="como-encontraste">¿Cómo nos encontraste?:</label>
+                <select id="como-encontraste" name="como-encontraste">
+                    <option value="buscador">Recomendación</option>
+                    <option value="redes-sociales">Redes Sociales</option>
+                    <option value="recomendacion">Google</option>
+                    <option value="otro">Otro</option>
+                </select><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <div class="whatsapp">
+            <a href="https://wa.me/5218112256437">
+                <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-circle-512.png"
+                    alt="Whatsapp">
+            </a>
+        </div>
+        <div class="up-button">
+            <a href="#">
+                <span class="arrow-up"></span>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div class="piedepag">
+            <p><br><br><br>Dr. Israel Villarreal &copy; 2023</p>
+            <ul>
+                <li><a href="https://www.instagram.com/dr.israel.radiologo/">Instagram</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100082693924391">Facebook</a></li>
+                <li><a href="https://wa.me/5218112256437">Whatsapp Web</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    function toggleAcordeon(event) {
+        const seccion = event.currentTarget;
+        const checkbox = seccion.querySelector('.btn-acordeon');
+        checkbox.checked = !checkbox.checked; // Cambiamos el estado del checkbox
+        seccion.classList.toggle('abierto');
+        const contenido = seccion.querySelector('.contenido-acordeon');
+        if (contenido.style.display === 'block') {
+            contenido.style.display = 'none';
+        } else {
+            contenido.style.display = 'block';
+        }
+    }
+
+    function toggleAcordeonb(event) {
+        event.stopPropagation(); // Evita la propagación del evento al acordeón principal
+        const seccionb = event.currentTarget;
+        seccionb.classList.toggle('abierto');
+        const contenidoB = seccionb.querySelector('.contenido-acordeonb');
+        if (contenidoB.style.display === 'block') {
+            contenidoB.style.display = 'none';
+        } else {
+            contenidoB.style.display = 'block';
+        }
+    }
+
+    // Función adicional para manejar el clic en .label-acordeon
+    document.querySelectorAll('.label-acordeon').forEach(function (label) {
+        label.addEventListener('click', function (event) {
+            const acordeon = this.closest('.acordeon');
+            const checkbox = acordeon.querySelector('.btn-acordeon');
+            checkbox.checked = !checkbox.checked; // Cambiamos el estado del checkbox
+            acordeon.classList.toggle('abierto');
+            const contenido = acordeon.querySelector('.contenido-acordeon');
+            if (contenido.style.display === 'block') {
+                contenido.style.display = 'none';
+            } else {
+                contenido.style.display = 'block';
+            }
+        });
+    });
+</script>
